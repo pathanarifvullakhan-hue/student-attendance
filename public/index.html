@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="subtitle">Sample preview · CSE (AI & ML)</div>
+        <header>
+            <div class="date-picker-group">
+                <label for="attendanceDate">Attendance date</label>
+                <input type="date" id="attendanceDate">
+            </div>
+            <button id="saveBtn" class="primary-btn">Save Attendance</button>
+        </header>
+
+        <section class="legend">
+            <span class="badge present">P — Present</span>
+            <span class="badge absent">A — Absent</span>
+        </section>
+
+        <div class="table-container">
+            <table id="attendanceTable">
+                <thead>
+                    <tr>
+                        <th>Roll No.</th>
+                        <th>Student</th>
+                        <th>P1</th>
+                        <th>P2</th>
+                        <th>P3</th>
+                        <th>P4</th>
+                        <th>P5</th>
+                        <th>P6</th>
+                        <th>P7</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div class="report-section">
+            <h2>Sample monthly report</h2>
+            <div class="report-controls">
+                <input type="month" id="reportMonth">
+                <button id="loadReportBtn" class="secondary-btn">Generate Report</button>
+            </div>
+            <table id="reportTable" style="margin-top: 15px;">
+                <thead>
+                    <tr>
+                        <th>Roll No.</th>
+                        <th>Student</th>
+                        <th>Working periods</th>
+                        <th>Present</th>
+                        <th>Absent</th>
+                        <th>Attendance</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
